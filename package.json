@@ -5,15 +5,27 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "css": "npx node-sass --watch src/css-customization/sass -o src/css-customization/css"
   },
   "dependencies": {
+    "@oruga-ui/oruga-next": "^0.4.8",
+    "@oruga-ui/theme-bulma": "^0.1.5",
     "core-js": "^3.6.5",
+    "hanzi-tools": "^1.2.26",
+    "hanzi-writer": "^3.3.0",
+    "node-youtube-subtitles": "^1.1.0",
+    "pinyin-utils": "^2.32.0",
+    "plyr": "^3.6.12",
+    "uuid": "^8.3.2",
     "vue": "^3.0.0",
     "vue-class-component": "^8.0.0-0",
+    "vue-plyr": "^7.0.0",
     "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
+    "@types/node": "^17.0.8",
+    "@types/youtube-player": "^5.5.5",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -27,6 +39,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^7.0.0",
+    "node-sass": "^7.0.1",
     "typescript": "~4.1.5"
   },
   "eslintConfig": {
@@ -42,7 +55,13 @@
     "parserOptions": {
       "ecmaVersion": 2020
     },
-    "rules": {}
+    "rules": {
+      "@typescript-eslint/ban-ts-comment": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "no-console": "off",
+      "class-methods-use-this": "off",
+      "max-len": "off"
+    }
   },
   "browserslist": [
     "> 1%",
