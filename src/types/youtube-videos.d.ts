@@ -1,9 +1,11 @@
 export interface Caption {
   start: number,
   end: number,
-  pinyin: string,
-  'zh-Hans': string,
-  en: string
+  captions: {
+    en: string
+    pinyin: string[],
+    'zh-Hans': string[],
+  }
 }
 
 export interface YoutubeVideo {
