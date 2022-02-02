@@ -1,21 +1,22 @@
 <template>
   <div class="youtube-video-viewer">
     Videos!
-    <AppYoutubePlayer v-if="videoId.length" @timeUpdate="onTimeUpdate" :videoId="videoId"></AppYoutubePlayer>
+    <AppYoutubePlayer v-if="videoId.length" @timeUpdate="onTimeUpdate" :videoId="videoId"/>
 
     <div v-if="youtubeVideo">
       <div class="caption-viewer">
-        <div class="caption-chinese">
-          {{ currentSubtitle['zh-Hans'] }}
-        </div>
-        <div class="caption-pinyin">
-          {{ currentSubtitle.pinyin }}
+        <div class="caption-chinese" v-if="currentSubtitle.captions">
+          <AppChineseCaption
+            :chinese="currentSubtitle.captions['zh-Hans']"
+            :pinyin="currentSubtitle.captions.pinyin"
+          />
         </div>
       </div>
 
       <div class="caption-list">
         <div v-for="(item) in youtubeVideo.captions" :key="item.start">
-          Start: {{ item.start }}, End: {{ item.end }} - {{ item['zh-Hans'] }} -> {{ item.pinyin }}
+          Start: {{ item.start }}, End: {{ item.end }} - {{ item.captions['zh-Hans'] }} ->
+          {{ item.captions.pinyin }}
         </div>
       </div>
     </div>
@@ -28,6 +29,7 @@ import { computed, onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
 import AppYoutubePlayer from '@/components/video/AppYoutubePlayer.vue';
+import AppChineseCaption from '@/components/AppChineseCaption.vue';
 
 import YoutubeVideos from '@/youtube-videos';
 
