@@ -1,24 +1,22 @@
-# chinese
+# Xielyn
 
-## Project setup
-```
+A learning platform for mandarin.
+
+[![Deploy static page](https://github.com/elyse0/xielyn/actions/workflows/deploy-vue.yml/badge.svg)](https://github.com/elyse0/xielyn/actions/workflows/deploy-vue.yml)
+
+### About
+
+In my journey to learn mandarin, I thought it'd be great if I combined the two things I really like: Programming and 
+Languages.
+
+要出发了! (Let's go!)
+
+### Development
+
+```js
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
+### Contributing
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Feel free to open a PR :) !
