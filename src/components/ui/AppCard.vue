@@ -37,4 +37,9 @@ div.card.has-background {
 div.card .media:not(:last-child) {
   margin-bottom: 0;
 }
+
+div.media {
+  display: flex;
+  align-items: center;
+}
 </style>
