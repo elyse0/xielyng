@@ -21,7 +21,7 @@ interface Props {
 
 const props = defineProps<Props>();
 
-const flagSource = `/flags/${getLanguageDefaultCountry(props.translationItem.language)}.png`;
+const flagSource = `${process.env.BASE_URL}/flags/${getLanguageDefaultCountry(props.translationItem.language)}.png`;
 
 </script>
 
