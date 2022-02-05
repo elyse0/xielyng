@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
 const Homepage = () => import('@/pages/Homepage.vue');
+const Verbs = () => import('@/pages/Verbs.vue');
 const Videos = () => import('@/pages/Videos.vue');
 const YoutubeVideoViewer = () => import('@/pages/YoutubeVideoViewer.vue');
 
@@ -14,6 +15,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/videos',
     name: 'Videos',
     component: Videos,
+  },
+  {
+    path: '/verbs',
+    name: 'Verbs',
+    component: Verbs,
   },
   {
     path: '/videos/youtube/:videoId',
