@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/extensions,import/no-unresolved
 import { YoutubeVideo } from '@/types/youtube-videos';
 
 import jmoe4Fz0sBY from './subtitles-jmoe4Fz0sBY.json';
