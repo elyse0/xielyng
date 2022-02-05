@@ -12,13 +12,6 @@
           />
         </div>
       </div>
-
-      <div class="caption-list">
-        <div v-for="(item) in youtubeVideo.captions" :key="item.start">
-          Start: {{ item.start }}, End: {{ item.end }} - {{ item.captions['zh-Hans'] }} ->
-          {{ item.captions.pinyin }}
-        </div>
-      </div>
     </div>
 
   </div>
