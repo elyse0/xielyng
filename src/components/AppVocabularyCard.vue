@@ -12,7 +12,7 @@
 
       <AppPinyinTranslation :translations="props.vocabularyItem.translations"/>
 
-      <AppPinyinAudio :url="props.vocabularyItem.audioUrl"/>
+      <AppPinyinAudio v-if="props.vocabularyItem.audioUrl" :url="props.vocabularyItem.audioUrl"/>
 
     </template>
   </AppCard>
