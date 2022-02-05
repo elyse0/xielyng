@@ -1,5 +1,5 @@
 <template>
-  <AppCard>
+  <AppCard style="height: 360px; margin: 5px">
     <template v-slot:media-left v-if="props.vocabularyItem.imageUrl">
       <img :src="props.vocabularyItem.imageUrl" alt="image">
     </template>
