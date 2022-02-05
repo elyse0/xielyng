@@ -4,7 +4,7 @@ interface ChineseLearningItem {
   hanzi: string;
   pinyin: string;
   translations: TranslationItem[]
-  audioUrl: string
+  audioUrl?: string
 }
 
 interface VocabularyItem extends ChineseLearningItem {
