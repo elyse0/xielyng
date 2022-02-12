@@ -1,7 +1,7 @@
 <template>
   <AppCard style="height: 360px; margin: 5px">
     <template v-slot:media-left v-if="props.vocabularyItem.imageUrl">
-      <img :src="props.vocabularyItem.imageUrl" alt="image">
+      <AppImage :src="props.vocabularyItem.imageUrl" alt="image"></AppImage>
     </template>
 
     <template v-slot:media-content>
@@ -24,6 +24,7 @@ import { defineProps } from 'vue';
 import { VocabularyItem } from '@/types/vocabulary';
 
 import AppCard from '@/components/ui/AppCard.vue';
+import AppImage from '@/components/ui/AppImage.vue';
 import AppHanziView from '@/components/AppHanziView.vue';
 import AppPinyinText from '@/components/AppPinyinText.vue';
 import AppPinyinAudio from '@/components/AppPinyinAudio.vue';
