@@ -28,6 +28,7 @@ div.youtube-videos {
   display: flex;
   flex-basis: fit-content;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 div.youtube-videos > div.video {
