@@ -11,4 +11,5 @@ export interface Caption {
 export interface YoutubeVideo {
   title: string,
   captions: Caption[]
+  thumbnailUrl?: string,
 }
