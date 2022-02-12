@@ -1,8 +1,8 @@
-# Xielyn
+# Xielyng
 
 A learning platform for mandarin.
 
-[![Deploy static page](https://github.com/elyse0/xielyn/actions/workflows/deploy-vue.yml/badge.svg)](https://github.com/elyse0/xielyn/actions/workflows/deploy-vue.yml)
+[![Deploy static page](https://github.com/elyse0/xielyng/actions/workflows/deploy-vue.yml/badge.svg)](https://github.com/elyse0/xielyn/actions/workflows/deploy-vue.yml)
 
 ### About
 
