@@ -18,5 +18,10 @@ import vocabulary from '@/vocabulary';
 </script>
 
 <style scoped>
-
+div.vocabulary {
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: fit-content;
+  flex-wrap: wrap;
+}
 </style>

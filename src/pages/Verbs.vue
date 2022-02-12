@@ -18,5 +18,10 @@ import AppVocabularyCard from '@/components/AppVocabularyCard.vue';
 </script>
 
 <style scoped>
-
+div.verbs {
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: fit-content;
+  flex-wrap: wrap;
+}
 </style>
