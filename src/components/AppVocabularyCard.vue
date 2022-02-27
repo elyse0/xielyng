@@ -41,5 +41,7 @@ const props = defineProps<Props>();
 div.media-left > img {
   max-height: 300px;
   max-width: 220px;
+  min-height: 220px;
+  min-width: 220px;
 }
 </style>
