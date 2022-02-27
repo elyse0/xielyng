@@ -3,6 +3,7 @@ import { PhraseItem } from '@/types/vocabulary';
 
 const phrases: PhraseItem[] = [
   {
+    category: 'phrases',
     hanzi: '再见',
     pinyin: 'zài jiàn',
     translations: [
@@ -13,6 +14,7 @@ const phrases: PhraseItem[] = [
     audioUrl: '',
   },
   {
+    category: 'phrases',
     hanzi: '拜拜',
     pinyin: 'bài bài',
     translations: [
@@ -23,6 +25,7 @@ const phrases: PhraseItem[] = [
     audioUrl: '',
   },
   {
+    category: 'phrases',
     hanzi: '你慢慢來',
     pinyin: 'nǐ màn màn lái',
     translations: [
@@ -33,6 +36,7 @@ const phrases: PhraseItem[] = [
     audioUrl: '',
   },
   {
+    category: 'phrases',
     hanzi: '沒錯',
     pinyin: 'méi cuò',
     translations: [
@@ -43,6 +47,7 @@ const phrases: PhraseItem[] = [
     audioUrl: '',
   },
   {
+    category: 'phrases',
     hanzi: '幹嘛',
     pinyin: 'gān má',
     translations: [
@@ -53,6 +58,7 @@ const phrases: PhraseItem[] = [
     audioUrl: '',
   },
   {
+    category: 'phrases',
     hanzi: '等一下',
     pinyin: 'děng yī xià',
     translations: [
@@ -63,6 +69,7 @@ const phrases: PhraseItem[] = [
     audioUrl: '',
   },
   {
+    category: 'phrases',
     hanzi: '你在干嘛?',
     pinyin: 'nǐ zài gān má',
     translations: [
@@ -73,6 +80,7 @@ const phrases: PhraseItem[] = [
     audioUrl: '',
   },
   {
+    category: 'phrases',
     hanzi: '那就好',
     pinyin: 'nà jiù hǎo',
     translations: [
@@ -83,6 +91,7 @@ const phrases: PhraseItem[] = [
     audioUrl: '',
   },
   {
+    category: 'phrases',
     hanzi: '麻煩你了',
     pinyin: 'má fán nǐ liǎo',
     translations: [
@@ -93,6 +102,7 @@ const phrases: PhraseItem[] = [
     audioUrl: '',
   },
   {
+    category: 'phrases',
     hanzi: '我先走了',
     pinyin: 'wǒ xiān zǒu liǎo',
     translations: [
@@ -103,6 +113,7 @@ const phrases: PhraseItem[] = [
     audioUrl: '',
   },
   {
+    category: 'phrases',
     hanzi: '有空再約',
     pinyin: 'yǒu kōng zài yuē',
     translations: [

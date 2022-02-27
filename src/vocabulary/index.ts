@@ -3,6 +3,7 @@ import { VocabularyItem } from '@/types/vocabulary';
 
 const vocabulary: VocabularyItem[] = [
   {
+    category: 'general',
     hanzi: '梦',
     pinyin: 'mèng',
     translations: [
@@ -14,17 +15,7 @@ const vocabulary: VocabularyItem[] = [
     imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/dream.png',
   },
   {
-    hanzi: '一',
-    pinyin: 'yī',
-    translations: [
-      { language: Language.English, text: 'one' },
-      { language: Language.French, text: 'un' },
-      { language: Language.Spanish, text: 'uno' },
-    ],
-    audioUrl: 'https://www.purpleculture.net/mp3/meng4.mp3',
-    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/one.png',
-  },
-  {
+    category: 'house',
     hanzi: '房间',
     pinyin: 'fáng​jiān',
     translations: [
@@ -36,6 +27,7 @@ const vocabulary: VocabularyItem[] = [
     audioUrl: 'https://www.purpleculture.net/mp3/meng4.mp3',
   },
   {
+    category: 'house',
     hanzi: '门',
     pinyin: 'mén',
     translations: [
@@ -46,6 +38,7 @@ const vocabulary: VocabularyItem[] = [
     imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/door.png',
   },
   {
+    category: 'house',
     hanzi: '电灯',
     pinyin: 'diàn​dēng',
     translations: [
@@ -56,6 +49,7 @@ const vocabulary: VocabularyItem[] = [
     imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/electric-light.png',
   },
   {
+    category: 'house',
     hanzi: '开关',
     pinyin: 'kāi​guān',
     translations: [
@@ -66,6 +60,7 @@ const vocabulary: VocabularyItem[] = [
     imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/switch.png',
   },
   {
+    category: 'beauty',
     hanzi: '镜子',
     pinyin: 'jìng​zi',
     translations: [

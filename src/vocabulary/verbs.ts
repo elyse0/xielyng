@@ -3,6 +3,7 @@ import { VocabularyItem } from '@/types/vocabulary';
 
 const verbs: VocabularyItem[] = [
   {
+    category: 'verbs',
     hanzi: '吃',
     pinyin: 'chī',
     translations: [
@@ -14,6 +15,7 @@ const verbs: VocabularyItem[] = [
     imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/to-eat.png',
   },
   {
+    category: 'verbs',
     hanzi: '睡觉',
     pinyin: 'shuì​jiào',
     translations: [
