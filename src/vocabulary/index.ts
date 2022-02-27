@@ -70,6 +70,116 @@ const vocabulary: VocabularyItem[] = [
     ],
     imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/mirror.png',
   },
+  {
+    category: 'numbers',
+    hanzi: '一',
+    pinyin: 'yī',
+    translations: [
+      { language: Language.English, text: 'one' },
+      { language: Language.French, text: 'un' },
+      { language: Language.Spanish, text: 'uno' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/one.png',
+  },
+  {
+    category: 'numbers',
+    hanzi: '二',
+    pinyin: 'èr',
+    translations: [
+      { language: Language.English, text: 'two' },
+      { language: Language.French, text: 'deux' },
+      { language: Language.Spanish, text: 'dos' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/two.png',
+  },
+  {
+    category: 'numbers',
+    hanzi: '三',
+    pinyin: 'sān',
+    translations: [
+      { language: Language.English, text: 'three' },
+      { language: Language.French, text: 'trois' },
+      { language: Language.Spanish, text: 'tres' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/three.png',
+  },
+  {
+    category: 'numbers',
+    hanzi: '四',
+    pinyin: 'sì',
+    translations: [
+      { language: Language.English, text: 'four' },
+      { language: Language.French, text: 'quatre' },
+      { language: Language.Spanish, text: 'cuatro' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/four.png',
+  },
+  {
+    category: 'numbers',
+    hanzi: '五',
+    pinyin: 'wŭ',
+    translations: [
+      { language: Language.English, text: 'five' },
+      { language: Language.French, text: 'cinq' },
+      { language: Language.Spanish, text: 'cinco' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/five.png',
+  },
+  {
+    category: 'numbers',
+    hanzi: '六',
+    pinyin: 'liù',
+    translations: [
+      { language: Language.English, text: 'six' },
+      { language: Language.French, text: 'six' },
+      { language: Language.Spanish, text: 'seis' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/six.png',
+  },
+  {
+    category: 'numbers',
+    hanzi: '七',
+    pinyin: 'qī',
+    translations: [
+      { language: Language.English, text: 'seven' },
+      { language: Language.French, text: 'sept' },
+      { language: Language.Spanish, text: 'siete' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/seven.png',
+  },
+  {
+    category: 'numbers',
+    hanzi: '八',
+    pinyin: 'bā',
+    translations: [
+      { language: Language.English, text: 'eight' },
+      { language: Language.French, text: 'huit' },
+      { language: Language.Spanish, text: 'ocho' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/eight.png',
+  },
+  {
+    category: 'numbers',
+    hanzi: '九',
+    pinyin: 'jiŭ',
+    translations: [
+      { language: Language.English, text: 'nine' },
+      { language: Language.French, text: 'neuf' },
+      { language: Language.Spanish, text: 'nueve' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/nine.png',
+  },
+  {
+    category: 'numbers',
+    hanzi: '十',
+    pinyin: 'shí',
+    translations: [
+      { language: Language.English, text: 'ten' },
+      { language: Language.French, text: 'dix' },
+      { language: Language.Spanish, text: 'diez' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/ten.png',
+  },
 ];
 
 export default vocabulary;
