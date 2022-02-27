@@ -1,6 +1,7 @@
 import { TranslationItem } from '@/types/translation';
 
 interface ChineseLearningItem {
+  category: string;
   hanzi: string;
   pinyin: string;
   translations: TranslationItem[]
