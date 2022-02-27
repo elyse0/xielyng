@@ -17,5 +17,6 @@ import AppFooter from '@/components/layout/AppFooter.vue';
 <style scoped>
 div.app-content {
   padding: 5px;
+  min-height: 90vh;
 }
 </style>
