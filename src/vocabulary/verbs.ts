@@ -70,6 +70,17 @@ const verbs: VocabularyItem[] = [
     ],
     imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/to-know.png',
   },
+  {
+    category: 'verbs',
+    hanzi: '报名',
+    pinyin: 'bào​míng',
+    translations: [
+      { language: Language.English, text: 'to sign up' },
+      { language: Language.French, text: "s'inscrire" },
+      { language: Language.Spanish, text: 'registrarse' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/to-signup.png',
+  },
 ];
 
 export default verbs;
