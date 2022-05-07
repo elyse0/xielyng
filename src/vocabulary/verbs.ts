@@ -59,6 +59,17 @@ const verbs: VocabularyItem[] = [
     ],
     imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/to-follow.png',
   },
+  {
+    category: 'verbs',
+    hanzi: '知道',
+    pinyin: 'zhī​dào',
+    translations: [
+      { language: Language.English, text: 'to know' },
+      { language: Language.French, text: 'savoir' },
+      { language: Language.Spanish, text: 'saber' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/to-know.png',
+  },
 ];
 
 export default verbs;
