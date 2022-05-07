@@ -26,6 +26,17 @@ const verbs: VocabularyItem[] = [
     audioUrl: 'https://xielyng.s3.fr-par.scw.cloud/audios/chi1.mp3',
     imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/to-sleep.png',
   },
+  {
+    category: 'verbs',
+    hanzi: '吐',
+    pinyin: 'tǔ',
+    translations: [
+      { language: Language.English, text: 'to throw up' },
+      { language: Language.French, text: 'vomir' },
+      { language: Language.Spanish, text: 'vomitar' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/to-throw-up.png',
+  },
 ];
 
 export default verbs;
