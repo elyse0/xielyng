@@ -81,6 +81,17 @@ const verbs: VocabularyItem[] = [
     ],
     imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/to-signup.png',
   },
+  {
+    category: 'verbs',
+    hanzi: '觉得',
+    pinyin: 'jué​de',
+    translations: [
+      { language: Language.English, text: 'to think of' },
+      { language: Language.French, text: 'en penser' },
+      { language: Language.Spanish, text: 'pensar algo' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/to-think.png',
+  },
 ];
 
 export default verbs;
