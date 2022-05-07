@@ -180,6 +180,17 @@ const vocabulary: VocabularyItem[] = [
     ],
     imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/ten.png',
   },
+  {
+    category: 'city',
+    hanzi: '车',
+    pinyin: 'chē',
+    translations: [
+      { language: Language.English, text: 'car' },
+      { language: Language.French, text: 'voiture' },
+      { language: Language.Spanish, text: 'carro' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/car.png',
+  },
 ];
 
 export default vocabulary;
