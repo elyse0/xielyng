@@ -92,6 +92,17 @@ const verbs: VocabularyItem[] = [
     ],
     imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/to-think.png',
   },
+  {
+    category: 'verbs',
+    hanzi: '问',
+    pinyin: 'wèn',
+    translations: [
+      { language: Language.English, text: 'to ask' },
+      { language: Language.French, text: 'demander' },
+      { language: Language.Spanish, text: 'preguntar' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/to-ask.png',
+  },
 ];
 
 export default verbs;
