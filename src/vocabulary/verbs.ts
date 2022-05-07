@@ -37,6 +37,17 @@ const verbs: VocabularyItem[] = [
     ],
     imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/to-throw-up.png',
   },
+  {
+    category: 'verbs',
+    hanzi: '去',
+    pinyin: 'qù',
+    translations: [
+      { language: Language.English, text: 'to go' },
+      { language: Language.French, text: 'aller' },
+      { language: Language.Spanish, text: 'go' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/to-go.png',
+  },
 ];
 
 export default verbs;
