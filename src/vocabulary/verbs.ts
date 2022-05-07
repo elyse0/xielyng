@@ -48,6 +48,17 @@ const verbs: VocabularyItem[] = [
     ],
     imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/to-go.png',
   },
+  {
+    category: 'verbs',
+    hanzi: '追踪',
+    pinyin: 'zhuī​zōng',
+    translations: [
+      { language: Language.English, text: 'to follow' },
+      { language: Language.French, text: 'suivre' },
+      { language: Language.Spanish, text: 'seguir' },
+    ],
+    imageUrl: 'https://xielyng.s3.fr-par.scw.cloud/images/to-follow.png',
+  },
 ];
 
 export default verbs;
