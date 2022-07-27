@@ -1,0 +1,44 @@
+# Copyright (c) 2020, NeoCode (https://github.com/xRealNeon/VuePagesAction)
+# SPDX-License-Identifier: MIT
+
+name: 'Vue to Github Pages'
+description: "Build and commit Vue SPA to gh-pages branch"
+inputs:
+  username:
+    description: 'Your username'
+    required: true
+  reponame:
+    description: 'Your reponame'
+    required: true
+  token:
+    description: 'Your Github token'
+    required: true
+  gitemail:
+    description: 'Your git commit email'
+    required: false
+    default: 'CI@example.com'
+  gitname:
+    description: 'Your git commit name'
+    required: false
+    default: 'CI'
+  gitmsg:
+    description: 'Your git commit message'
+    required: false
+    default: 'Deploy'
+runs:
+  using: composite
+  steps:
+    - name: 'Build Vue SPA'
+      shell: bash
+      run: |
+        npm install -g pnpm
+        pnpm install
+        pnpm run build
+        cd dist
+        ln -s index.html 404.html
+        git config --global user.email "${{ inputs.gitemail }}"
+        git config --global user.name "${{ inputs.gitname }}"
+        git init
+        git add -A
+        git commit -m '${{ inputs.gitmsg }}'
+        git push -f https://${{ inputs.username }}:${{ inputs.token }}@github.com/${{ inputs.username }}/${{ inputs.reponame }}.git master:gh-pages

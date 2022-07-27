@@ -38,7 +38,7 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(__webpack_public_path__),
+  history: createWebHistory('/xielyng/'),
   routes,
 });
 
