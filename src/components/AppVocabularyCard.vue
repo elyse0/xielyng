@@ -1,19 +1,29 @@
 <template>
   <AppCard style="height: 360px; margin: 5px">
-    <template v-slot:media-left v-if="props.vocabularyItem.imageUrl">
-      <AppImage :src="props.vocabularyItem.imageUrl" alt="image"></AppImage>
+    <template
+      v-if="props.vocabularyItem.imageUrl"
+      #media-left
+    >
+      <AppImage
+        :src="props.vocabularyItem.imageUrl"
+        alt="image"
+      />
     </template>
 
-    <template v-slot:media-content>
+    <template #media-content>
+      <AppPinyinText
+        class="has-text-centered"
+        :pinyin="props.vocabularyItem.pinyin"
+      />
 
-      <AppPinyinText class="has-text-centered" :pinyin="props.vocabularyItem.pinyin"/>
+      <AppHanziView :hanzi="props.vocabularyItem.hanzi" />
 
-      <AppHanziView :hanzi="props.vocabularyItem.hanzi"/>
+      <AppPinyinTranslation :translations="props.vocabularyItem.translations" />
 
-      <AppPinyinTranslation :translations="props.vocabularyItem.translations"/>
-
-      <AppPinyinAudio v-if="props.vocabularyItem.audioUrl" :url="props.vocabularyItem.audioUrl"/>
-
+      <AppPinyinAudio
+        v-if="props.vocabularyItem.audioUrl"
+        :url="props.vocabularyItem.audioUrl"
+      />
     </template>
   </AppCard>
 </template>

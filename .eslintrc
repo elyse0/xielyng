@@ -1,0 +1,27 @@
+{
+  "ignorePatterns": [
+    "vite.config.js"
+  ],
+  "root": true,
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/recommended"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "vue/no-v-model-argument": "off",
+    "class-methods-use-this": "off",
+    "no-console": "off",
+    "max-len": "off"
+  }
+}

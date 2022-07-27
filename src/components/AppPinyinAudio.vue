@@ -1,11 +1,14 @@
 <template>
   <div class="pinyin-audio">
     <vue-plyr>
-      <audio controls playsinline>
+      <audio
+        controls
+        playsinline
+      >
         <source
           :src="props.url"
           type="audio/mp3"
-        />
+        >
       </audio>
     </vue-plyr>
   </div>

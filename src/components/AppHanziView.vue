@@ -1,6 +1,11 @@
 <template>
   <div class="hanzi-view">
-    <div class="item" v-for="item in hanziItems" :key="item.id" :id="item.id"/>
+    <div
+      v-for="item in hanziItems"
+      :id="item.id"
+      :key="item.id"
+      class="item"
+    />
   </div>
 </template>
 

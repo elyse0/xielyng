@@ -1,11 +1,12 @@
 <template>
   <AppLayout>
     <div class="verbs">
-
-      <div v-for="(verb, index) in verbs" :key="index">
-        <AppVocabularyCard :vocabulary-item="verb"/>
+      <div
+        v-for="(verb, index) in verbs"
+        :key="index"
+      >
+        <AppVocabularyCard :vocabulary-item="verb" />
       </div>
-
     </div>
   </AppLayout>
 </template>

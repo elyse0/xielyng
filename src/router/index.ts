@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
+import { getBaseUrl } from '@/util/env';
+
 const Homepage = () => import('@/pages/Homepage.vue');
 const Verbs = () => import('@/pages/Verbs.vue');
 const Videos = () => import('@/pages/Videos.vue');
@@ -38,7 +40,7 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-  history: createWebHistory('/xielyng/'),
+  history: createWebHistory(getBaseUrl()),
   routes,
 });
 

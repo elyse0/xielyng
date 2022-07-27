@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "preinstall": "npx only-allow pnpm",
+    "serve": "vite serve",
+    "build": "vite build",
+    "lint": "eslint --ext .ts,.vue --fix src",
     "css": "npx node-sass --watch src/css-customization/sass -o src/css-customization/css"
   },
   "dependencies": {
@@ -25,43 +26,15 @@
   "devDependencies": {
     "@types/node": "^17.0.8",
     "@types/youtube-player": "^5.5.5",
-    "@typescript-eslint/eslint-plugin": "^4.18.0",
-    "@typescript-eslint/parser": "^4.18.0",
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-plugin-typescript": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
-    "@vue/eslint-config-airbnb": "^5.0.2",
-    "@vue/eslint-config-typescript": "^7.0.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-vue": "^7.0.0",
-    "node-sass": "^7.0.1",
+    "@typescript-eslint/parser": "^5.31.0",
+    "@vitejs/plugin-vue": "^3.0.1",
+    "eslint": "^8.20.0",
+    "eslint-plugin-vue": "^7.20.0",
     "tslib": "^2.4.0",
-    "typescript": "~4.1.5"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "@vue/airbnb",
-      "@vue/typescript/recommended"
-    ],
-    "parserOptions": {
-      "ecmaVersion": 2020
-    },
-    "rules": {
-      "@typescript-eslint/ban-ts-comment": "off",
-      "@typescript-eslint/no-explicit-any": "off",
-      "no-console": "off",
-      "class-methods-use-this": "off",
-      "max-len": "off"
-    }
+    "typescript": "^4.7.4",
+    "vite": "^3.0.3",
+    "vite-plugin-eslint": "^1.7.0",
+    "vue-eslint-parser": "^9.0.3"
   },
   "browserslist": [
     "> 1%",

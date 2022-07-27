@@ -1,20 +1,18 @@
 <template>
   <div class="card has-background">
     <div class="card-content">
-
       <div class="media">
         <div class="media-left">
-          <slot name="media-left"/>
+          <slot name="media-left" />
         </div>
         <div class="media-content">
-          <slot name="media-content"/>
+          <slot name="media-content" />
         </div>
       </div>
 
       <div class="content">
-        <slot name="content"/>
+        <slot name="content" />
       </div>
-
     </div>
   </div>
 </template>

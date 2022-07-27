@@ -2,7 +2,7 @@
   <AppLayout>
     <div class="quote">
       <div class="hanzi">
-        <o-tooltip label="Qiān lǐ zhī xíng, shǐ yú zú xià." >
+        <o-tooltip label="Qiān lǐ zhī xíng, shǐ yú zú xià.">
           千里之行,始于足下
         </o-tooltip>
       </div>

@@ -1,17 +1,16 @@
-import { Language } from '@/types/translation';
+import { Language, OLanguage } from '@/types/translation';
 
 const getLanguageDefaultCountry = (language: Language): string => {
   switch (language) {
-    case Language.English:
+    case OLanguage.English:
       return 'uk';
-    case Language.French:
+    case OLanguage.French:
       return 'france';
-    case Language.Spanish:
+    case OLanguage.Spanish:
       return 'spain';
     default:
       return '';
   }
 };
 
-// eslint-disable-next-line import/prefer-default-export
 export { getLanguageDefaultCountry };

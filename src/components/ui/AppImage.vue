@@ -1,5 +1,8 @@
 <template>
-  <img v-lazy="props.src" :alt="alt">
+  <img
+    v-lazy="props.src"
+    :alt="alt"
+  >
 </template>
 
 <script setup lang="ts">

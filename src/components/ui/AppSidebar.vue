@@ -1,11 +1,12 @@
 <template>
   <div class="app-sidebar">
-    <o-button v-for="(item, index) in props.items"
-              :key="index"
-              :label="item"
-              expanded
-              :variant="getVariant(item)"
-              @click="onClick(item)"
+    <o-button
+      v-for="(item, index) in props.items"
+      :key="index"
+      :label="item"
+      expanded
+      :variant="getVariant(item)"
+      @click="onClick(item)"
     />
   </div>
 </template>

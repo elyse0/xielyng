@@ -11,5 +11,4 @@ const timeToMs = (time: string): number => {
   return s * 1000 + Number(t[4]);
 };
 
-// eslint-disable-next-line import/prefer-default-export
 export { timeToMs };

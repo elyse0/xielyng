@@ -1,10 +1,10 @@
 <template>
   <div class="app-layout">
-    <AppNavbar></AppNavbar>
+    <AppNavbar />
     <div class="app-content">
-      <slot/>
+      <slot />
     </div>
-    <AppFooter></AppFooter>
+    <AppFooter />
   </div>
 </template>
 

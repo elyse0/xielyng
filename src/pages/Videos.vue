@@ -1,15 +1,20 @@
 <template>
   <AppLayout>
     <div class="videos">
-
       <div class="youtube-videos">
-        <div class="video" v-for="(video) in youtubeVideosArray" :key="video.id">
+        <div
+          v-for="(video) in youtubeVideosArray"
+          :key="video.id"
+          class="video"
+        >
           <router-link :to="`/videos/youtube/${video.id}`">
-            <AppImage :src="video.thumbnailUrl" :alt="video.title"></AppImage>
+            <AppImage
+              :src="video.thumbnailUrl"
+              :alt="video.title"
+            />
           </router-link>
         </div>
       </div>
-
     </div>
   </AppLayout>
 </template>

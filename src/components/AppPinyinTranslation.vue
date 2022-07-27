@@ -1,7 +1,8 @@
 <template>
   <div class="pinyin-translation">
     <AppTranslationItem
-      v-for="(translationItem) in props.translations" :key="translationItem.language"
+      v-for="(translationItem) in props.translations"
+      :key="translationItem.language"
       :translation-item="translationItem"
     />
   </div>

@@ -1,6 +1,9 @@
 <template>
   <div class="pinyin-text">
-    <o-tooltip :label="toneNumber.toString()" position="bottom">
+    <o-tooltip
+      :label="toneNumber.toString()"
+      position="bottom"
+    >
       {{ props.pinyin }}
     </o-tooltip>
   </div>

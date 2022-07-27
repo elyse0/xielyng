@@ -1,7 +1,10 @@
 <template>
   <div class="translation-item">
     <div class="country-flag">
-      <img :src="flagSource" alt="France flag">
+      <img
+        :src="flagSource"
+        alt="France flag"
+      >
     </div>
     <div class="translation has-text-centered">
       {{ props.translationItem.text }}
@@ -14,6 +17,7 @@ import { defineProps } from 'vue';
 import { TranslationItem } from '@/types/translation';
 
 import { getLanguageDefaultCountry } from '@/util/languages';
+import { getBaseUrl } from '@/util/env';
 
 interface Props {
   translationItem: TranslationItem
@@ -21,7 +25,7 @@ interface Props {
 
 const props = defineProps<Props>();
 
-const flagSource = `${process.env.BASE_URL}/flags/${getLanguageDefaultCountry(props.translationItem.language)}.png`;
+const flagSource = `${getBaseUrl()}/flags/${getLanguageDefaultCountry(props.translationItem.language)}.png`;
 
 </script>
 

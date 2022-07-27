@@ -1,11 +1,18 @@
 <template>
   <AppLayout>
     <div class="youtube-video-viewer">
-      <AppYoutubePlayer v-if="videoId.length" @timeUpdate="onTimeUpdate" :videoId="videoId"/>
+      <AppYoutubePlayer
+        v-if="videoId.length"
+        :video-id="videoId"
+        @timeUpdate="onTimeUpdate"
+      />
 
       <div v-if="youtubeVideo">
         <div class="caption-viewer">
-          <div class="caption-chinese" v-if="currentSubtitle.captions">
+          <div
+            v-if="currentSubtitle.captions"
+            class="caption-chinese"
+          >
             <AppChineseCaption
               :chinese="currentSubtitle.captions['zh-Hans']"
               :pinyin="currentSubtitle.captions.pinyin"
@@ -13,7 +20,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </AppLayout>
 </template>

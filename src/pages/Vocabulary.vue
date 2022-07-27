@@ -1,15 +1,18 @@
 <template>
   <AppLayout>
     <div class="vocabulary">
-
-      <AppSidebar :items="categories" v-model:selected-item="selectedCategory"></AppSidebar>
+      <AppSidebar
+        v-model:selected-item="selectedCategory"
+        :items="categories"
+      />
 
       <div class="vocabulary-items">
-        <AppVocabularyCard v-for="(vocabularyItem) in filteredVocabulary"
-                           :key="vocabularyItem.hanzi"
-                           :vocabulary-item="vocabularyItem"/>
+        <AppVocabularyCard
+          v-for="(vocabularyItem) in filteredVocabulary"
+          :key="vocabularyItem.hanzi"
+          :vocabulary-item="vocabularyItem"
+        />
       </div>
-
     </div>
   </AppLayout>
 </template>

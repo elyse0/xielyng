@@ -1,9 +1,9 @@
 <template>
   <div class="chinese-captions">
-
     <div class="chinese-text">
       <AppChineseCaptionSegment
-        v-for="(segment, index) in props.chinese" :key="index"
+        v-for="(segment, index) in props.chinese"
+        :key="index"
         :segment="segment"
         :is-highlighted="isIndexHighlighted(index)"
         @mouseover="onMouseOverSegment(index)"
@@ -13,14 +13,14 @@
 
     <div class="pinyin-text">
       <AppChineseCaptionSegment
-        v-for="(segment, index) in props.pinyin" :key="index"
+        v-for="(segment, index) in props.pinyin"
+        :key="index"
         :segment="segment"
         :is-highlighted="isIndexHighlighted(index)"
         @mouseover="onMouseOverSegment(index)"
         @mouseleave="onMouseLeaveSegment"
       />
     </div>
-
   </div>
 </template>
 

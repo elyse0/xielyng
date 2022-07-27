@@ -1,5 +1,8 @@
 <template>
-  <div :class="computedClass" @click="clickOnSegment">
+  <div
+    :class="computedClass"
+    @click="clickOnSegment"
+  >
     {{ props.segment }}
   </div>
 </template>

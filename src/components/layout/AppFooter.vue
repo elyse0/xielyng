@@ -2,7 +2,11 @@
   <div class="app-footer">
     <div class="badge">
       <div class="badge-header">
-        <img src="https://xielyng.s3.fr-par.scw.cloud/logo.png" alt="Xielyng logo" width="40">
+        <img
+          src="https://xielyng.s3.fr-par.scw.cloud/logo.png"
+          alt="Xielyng logo"
+          width="40"
+        >
         Xielyng
       </div>
 
@@ -10,7 +14,12 @@
     </div>
     <div class="links">
       <ul>
-        <li><a href="https://github.com/elyse0/xielyng" target="_blank">Github repository</a></li>
+        <li>
+          <a
+            href="https://github.com/elyse0/xielyng"
+            target="_blank"
+          >Github repository</a>
+        </li>
       </ul>
     </div>
   </div>
