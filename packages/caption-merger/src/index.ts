@@ -34,4 +34,21 @@ const getMergedVideoCaptions = (videoCaptions: VideoCaptions[]): MergedVideoCapt
     return mergedCaptions;
 }
 
-export { getMergedVideoCaptions }
+const shiftMergedVideoCaptions = (
+    mergedVideoCaptions: MergedVideoCaptions[],
+    shiftNumber: number
+): MergedVideoCaptions[] => {
+    const newMergedVideoCaptions: MergedVideoCaptions[] = [];
+
+    for (const item of mergedVideoCaptions) {
+        newMergedVideoCaptions.push({
+            start: item.start + shiftNumber,
+            end: item.start + shiftNumber,
+            captions: item.captions,
+        });
+    }
+
+    return newMergedVideoCaptions;
+};
+
+export { getMergedVideoCaptions, shiftMergedVideoCaptions }
