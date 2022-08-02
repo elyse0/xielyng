@@ -13,6 +13,7 @@
     "@xielyng/hanzi-pinyin-captions": "workspace:^1.0.0"
   },
   "devDependencies": {
+    "pnpm-isolate-workspace": "^0.0.9",
     "tsc-alias": "^1.7.0",
     "typescript": "^4.7.4"
   }
