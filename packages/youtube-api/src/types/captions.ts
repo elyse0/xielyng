@@ -1,5 +1,5 @@
 interface Caption {
-    text: string;
+    text: string | string[];
     start: number;
     end: number;
 }
