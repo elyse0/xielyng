@@ -1,12 +1,16 @@
 import { Err, Ok, Result } from 'ts-results-es'
 
 import { HttpError, HttpService } from '@xielyng/http-service'
+import { VideoCaptions } from '@xielyng/youtube-api'
 
 class CaptionService {
     private static youtubeUrl = 'https://youtube-subtitles-zjlkubqtfa-uc.a.run.app';
 
-    static async getYoutubeCaptions(videoId: string, languageId: string) {
-        return HttpService.get(`${CaptionService.youtubeUrl}/${videoId}/${languageId}`);
+    static async getYoutubeCaptions(
+        videoId: string,
+        languageId: string,
+    ): Promise<Result<VideoCaptions, HttpError>> {
+        return HttpService.get<VideoCaptions>(`${CaptionService.youtubeUrl}/${videoId}/${languageId}`);
     }
 
     static async getAvailableYoutubeCaptions(videoId: string): Promise<Result<string[], HttpError>> {

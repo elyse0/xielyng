@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@xielyng/http-service": "workspace:^1.0.0",
+    "@xielyng/youtube-api": "workspace:^1.0.0",
     "ts-results-es": "^3.5.0"
   },
   "devDependencies": {
